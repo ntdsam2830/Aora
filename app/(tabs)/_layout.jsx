@@ -1,14 +1,15 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Slot } from "expo-router";
+import React from "react";
+import { Tabs, Redirect } from "expo-router";
 
-const RootLayout = () => {
+const TabsLayout = () => {
   return (
     <>
-      <Text>Header</Text>
-      <Slot />
-      <Text>Footer</Text>
+      <Tabs>
+        <Tabs.Screen name="home" />
+      </Tabs>
     </>
   );
 };
 
-export default RootLayout;
+export default TabsLayout;
