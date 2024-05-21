@@ -10,6 +10,7 @@ const SignUp = () => {
     username: "",
     email: "",
     password: "",
+    confirmPassword: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -46,6 +47,13 @@ const SignUp = () => {
 
           <FormField
             title="Password"
+            value={form.password}
+            handleChangeText={(e) => setForm({ ...form, password: e })}
+            otherStyles="mt-7"
+          />
+
+          <FormField
+            title="Confirm password"
             value={form.password}
             handleChangeText={(e) => setForm({ ...form, password: e })}
             otherStyles="mt-7"
