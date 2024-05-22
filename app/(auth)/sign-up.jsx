@@ -23,8 +23,7 @@ const SignUp = () => {
       !form.confirmPassword
     ) {
       Alert.alert("Error", "Please fill in all the fields");
-    }
-    if (form.password !== form.confirmPassword) {
+    } else if (form.password !== form.confirmPassword) {
       Alert.alert("Error", "Password must match");
     }
 
@@ -77,7 +76,7 @@ const SignUp = () => {
           />
 
           <FormField
-            title="Confirm Password"
+            title="Confirm password"
             value={form.confirmPassword}
             handleChangeText={(e) => setForm({ ...form, confirmPassword: e })}
             otherStyles="mt-7"
