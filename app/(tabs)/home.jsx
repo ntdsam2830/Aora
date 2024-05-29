@@ -58,7 +58,7 @@ const Home = () => {
             subtitle="Be the first one to upload a video"
           />
         )}
-        refreshControl={<RefreshControl refreshing={refreshing} />}
+        refreshControl={<RefreshControl refreshing={refreshing} onRefresh={} />}
       />
     </SafeAreaView>
   );
