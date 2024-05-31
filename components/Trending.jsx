@@ -1,5 +1,13 @@
-import { FlatList, Text, View } from "react-native";
-import React from "react";
+import {
+  FlatList,
+  Text,
+  Image,
+  ImageBackground,
+  TouchableOpacity,
+} from "react-native";
+import { useState, React } from "react";
+import { ResizeMode, Video } from "expo-av";
+import * as Animatable from "react-native-animatable";
 
 const Trending = ({ posts }) => {
   return (
