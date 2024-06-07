@@ -6,8 +6,6 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { useState, React } from "react";
-import { ResizeMode, Video } from "expo-av";
-import * as Animatable from "react-native-animatable";
 
 const Trending = ({ posts }) => {
   return (
